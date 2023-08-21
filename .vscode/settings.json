@@ -1,3 +1,13 @@
 {
-    "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "css": "css",
+    "typescript": "typescript",
+    "svelte": "svelte"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
