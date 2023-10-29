@@ -1,4 +1,4 @@
-import tailwindConfig from "./src/lib/tailwindcss/tailwind.config.ts"
+import tailwindConfig from "./src/lib/theme/tailwind.config.ts"
 
 /** @type {import('tailwindcss').Config} */
 export default {

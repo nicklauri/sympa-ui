@@ -13,6 +13,7 @@
   import { __ctx, type TabId, type TabListContext } from "./TabList.svelte"
   import type { Writable } from "svelte/store"
   import { createIncrementIdFn } from "$utils/increment-id"
+  import { cn } from "$utils/css"
 
   type $$Props = Props
 
@@ -29,6 +30,8 @@
   onDestroy(() => {
     $ctx.headerBtnMap.delete(value)
   })
+
+  let tabBtnClass = cn("text-fui-base-300")
 </script>
 
 <button class="sui-tab" class:active={$ctx.selected === value} on:click={() => ($ctx.selected = value)} bind:this={el}>

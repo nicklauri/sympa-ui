@@ -1,10 +1,28 @@
 import { cva } from "class-variance-authority"
 
-export const tabButton = cva("sui-tab", {
+const tabButtonDefaultClasses = "sui-tab"
+
+export const tabButton = cva(tabButtonDefaultClasses, {
   variants: {
     variant: {
-      primary: "text-primary",
-      secondary: "",
+      subtle: "subtle",
+      transparent: "transparent",
     },
+
+    size: {
+      small: "small",
+      medium: "medium",
+      large: "large",
+    },
+
+    direction: {
+      horizonal: "horizontal",
+      vertical: "vertical ",
+    },
+  },
+  defaultVariants: {
+    variant: "transparent",
+    size: "medium",
+    direction: "horizonal",
   },
 })
